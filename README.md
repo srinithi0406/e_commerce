@@ -1,11 +1,11 @@
-# 🛍️ ShopZ - E-commerce Homepage
+#  ShopZ - E-commerce Homepage
 
 Welcome to **ShopZ**, a sleek and responsive E-commerce homepage designed with **HTML** and **CSS**.  
 It features a modern layout with a hero section, carousel for popular items, customer testimonials, and a clean footer.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ecom/
@@ -19,19 +19,19 @@ ecom/
     ├── girl1.jpg
     ├── girl2.jpeg
     ├── girl3.jpg
-    ├── screenshot1.png
-    └── screenshot2.png
+    ├── sc1.png
+    └── sc2.png
 ```
 
 ---
 
-## 🌟 Features
+##  Features
 
-- ✅ Responsive  
-- ✅ Hero Banner   
-- ✅ "Popular Picks" Horizontal Scroll Carousel  
-- ✅ Testimonials Section  
-- ✅ Minimalistic Footer  
+-  Responsive  
+-  Hero Banner   
+-  "Popular Picks" Horizontal Scroll Carousel  
+-  Testimonials Section  
+-  Minimalistic Footer  
 
 
 ---
@@ -40,7 +40,7 @@ ecom/
 
 1. **Clone the Repository / Download the Folder**
    ```bash
-   git clone <your-repo-url>
+   git clone <repo-url>
    ```
 
 2. **Navigate to the Project Directory**
@@ -56,15 +56,16 @@ ecom/
 
 ## Preview
 
-###  Desktop View
-![Desktop Screenshot](./assets/sc1.png)
 
-### Mobile View
-![Mobile Screenshot](./assets/sc2.png)
+![Screenshot1](./assets/sc1.png)
+
+![Screenshot2](./assets/sc2.png)
+
+![Screenshot3](./assets/sc3.png)
 
 ---
 
-## 📌 Notes
+##  Notes
 
 - All product and UI images are placed inside the `assets/` folder.
 - Responsiveness is handled with `@media` queries for devices below `768px`.
