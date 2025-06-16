@@ -21,6 +21,7 @@ ecom/
     ├── girl3.jpg
     ├── sc1.png
     └── sc2.png
+    └── sc3.png
 ```
 
 ---
@@ -56,11 +57,11 @@ ecom/
 
 ## Preview
 
-
+### Screenshot 1
 ![Screenshot1](./assets/sc1.png)
-
+### Screenshot 2
 ![Screenshot2](./assets/sc2.png)
-
+### Screenshot 3
 ![Screenshot3](./assets/sc3.png)
 
 ---
