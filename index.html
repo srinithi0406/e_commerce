@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Shop<span>Z</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/shopping-cart.png" alt="Cart"/></a></li>
+        <li><a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/search--v1.png" alt="Search"/></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Sliding Slideshow -->
+  <section class="hero-banner">
+    <div class="hero-text">
+        <h1><span class="highlight">New</span> Arrivals</h1>
+        <p class="price">Exclusive range just for you</p>
+        <button class="shop-btn">Shop Now</button>
+    </div>
+    <div class="hero-slant">
+        <img src="./assets/watch1.jpg" alt="Watch" />
+    </div>
+  </section>
+
+
+
+  <!-- Popular Items Carousel -->
+  <section class="popular">
+    <h2>Popular Picks</h2>
+    <div class="carousel">
+    <div class="card">
+        <img src="./assets/boy1.jpg" alt="Item">
+        <p>Item 1</p>
+        <span class="price">₹1999</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/watch1.jpg" alt="Item">
+        <p>Item 2</p>
+        <span class="price">₹1499</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/girl1.jpg" alt="Item">
+        <p>Item 3</p>
+        <span class="price">₹2299</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/boy2.jpg" alt="Item">
+        <p>Item 4</p>
+        <span class="price">₹2999</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/watch2.jpg" alt="Item">
+        <p>Item 5</p>
+        <span class="price">₹899</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/girl2.jpeg" alt="Item">
+        <p>Item 6</p>
+        <span class="price">₹799</span>
+        <button class="view-btn">View</button>
+    </div>
+    <div class="card">
+        <img src="./assets/girl3.jpg" alt="Item">
+        <p>Item 7</p>
+        <span class="price">₹999</span>
+        <button class="view-btn">View</button>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"Amazing quality and fast delivery! Highly recommended."</p>
+      <span>- XYZ.</span>
+    </div>
+    <div class="testimonial">
+      <p>"My go-to store for all seasonal fashion. Love it!"</p>
+      <span>- ABC.</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Contact us: contact@shopz.com | 📍 24, Mall Road, Chennai, India</p>
+    <p>Follow us:
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
+    </p>
+    <p>&copy; 2025 ShopZ. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto Slide Hero
+    const slider = document.querySelector('.slider');
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % 4;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+
+    // Carousel Control
+    const carousel = document.querySelector('.carousel');
+    document.querySelector('.arrow.left').addEventListener('click', () => {
+      carousel.scrollBy({ left: -220, behavior: 'smooth' });
+    });
+    document.querySelector('.arrow.right').addEventListener('click', () => {
+      carousel.scrollBy({ left: 220, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
